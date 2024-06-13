@@ -33,7 +33,7 @@ export default function App() {
   const [showAddFriend, setShowAddFriend] = useState(false);
 
   const [selectedFriend, setSelectedFriend] = useState(null);
-    // Handlers
+    // Event Handlers
   function handleShowAddFriend() {
     setShowAddFriend((showAddFriend) => !showAddFriend)
   }
@@ -110,7 +110,7 @@ function FriendsList({ friendsProps,
 function Friend({friendProps, 
   onSelectionProps, selectedFriendProps}) {
 
-    // Using Optional chaining => // Compare selected friends with current friend
+    // Using Optional chaining => // Compare selected friends with current friendobj
   const isSelected = selectedFriendProps?.id === friendProps.id;
 
   return (
