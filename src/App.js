@@ -110,7 +110,7 @@ function FriendsList({ friendsProps,
 function Friend({friendProps, 
   onSelectionProps, selectedFriendProps}) {
 
-    // Using Optional chaining => // Compare selected friends with current friendobj
+    // Using Optional chaining => Compare selected friends with current friendobj
   const isSelected = selectedFriendProps?.id === friendProps.id;
 
   return (
