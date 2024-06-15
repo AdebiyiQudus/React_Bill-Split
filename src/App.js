@@ -75,7 +75,8 @@ export default function App() {
           />
 
         {showAddFriend && <FormAddFriend 
-        onAddFriendProps={handleAddFriend}/>}
+        onAddFriendProps={handleAddFriend}
+        />}
        
         <Button onClickProps={handleShowAddFriend}>
          {/* If showAddFriend is true set button text to "Close" else set to "Add friend" */}
