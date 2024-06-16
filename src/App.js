@@ -228,7 +228,7 @@ function FormSplitBill({ selectedFriendProps, onSplitBillProps }) {
         Number(e.target.value))} 
       />
  
-    <label>👭 {selectedFriendProps.name}'s expense</label>
+    <label>👭 {selectedFriendProps.name}'s expense </label>
     <input 
       type="text" disabled 
       value={paidByFriend}
