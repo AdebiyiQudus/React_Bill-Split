@@ -25,7 +25,7 @@ const initialFriends = [
 
 function Button({children, onClickProps}) {
   return <button className="button" onClick={onClickProps}>
-    {children}</button>
+    {children} </button>
 }
 
 export default function App() {
@@ -242,7 +242,7 @@ function FormSplitBill({ selectedFriendProps, onSplitBillProps }) {
       <option value="user">You</option>
       <option value="friend">{selectedFriendProps.name} </option>
     </select>
-    
+    p
     <Button>Split bill </Button>
     </form>
   )
