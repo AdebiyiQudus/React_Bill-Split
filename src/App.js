@@ -116,8 +116,8 @@ function Friend({friendProps,
 
   return (
     <li className={isSelected ? "selected" : ""}>
-      <img src={friendProps.image} alt={friendProps.name} />
-      <h3>{friendProps.name} </h3>
+      <img src={friendProps.image} alt={friendProps.name}/>
+      <h3>{friendProps.name}</h3>
 
       {friendProps.balance < 0 && (
         <p className="red">
