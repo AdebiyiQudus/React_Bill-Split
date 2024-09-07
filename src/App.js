@@ -244,7 +244,7 @@ function FormSplitBill({ selectedFriendProps, onSplitBillProps }) {
       <option value="friend">{selectedFriendProps.name}</option>
     </select>
   
-    <Button>Split bill </Button>
+    <Button>Split bill</Button>
     </form>
   )
 }
