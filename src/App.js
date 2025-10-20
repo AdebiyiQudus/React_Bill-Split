@@ -1,4 +1,4 @@
-// Prop drilling =>This is a process of passing data from a parent componrnt down to nested child components through props, even if those intermediate components do not directly use the data.
+// Prop drilling => This is a process of passing data from a parent componrnt down to nested child components through props, even if those intermediate components do not directly use the data.
 
 import { useState } from "react";
 
@@ -34,7 +34,9 @@ export default function App() {
   const [showAddFriend, setShowAddFriend] = useState(false);
 
   const [selectedFriend, setSelectedFriend] = useState(null);
+
     // Event Handlers
+  // If showAddFriend cur state is false update and set to true(show addfriend form) else set to false (Do not show)
   function handleShowAddFriend() {
     setShowAddFriend((showAddFriend) => !showAddFriend)
   }
@@ -152,7 +154,7 @@ function FormAddFriend({ onAddFriendProps }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    // Using guard clause
+    // Using guard clause -> if name or image is empty return nothing
     if (!name || !image) return;
 
     // To generate random Id in the browser
@@ -160,6 +162,7 @@ function FormAddFriend({ onAddFriendProps }) {
     const newFriend = {
       id,
       name,
+    // Generate random image using the id  
       image: `${image}?=${id}`,
       balance: 0,
     };
@@ -224,7 +227,7 @@ function FormSplitBill({ selectedFriendProps, onSplitBillProps }) {
       type="text"
       value={paidByUser}
       onChange={(e) => 
-  // If your expense value > bill then it will return the value inputed before > the bill else return the initial value inputed
+  // If your expense value > bill then itksy will return the value inputed before > the bill else return the initial value inputed
         setPaidByUser(Number(e.target.value) > bill ? paidByUser :
         Number(e.target.value))} 
       />
