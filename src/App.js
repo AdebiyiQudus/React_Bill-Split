@@ -58,7 +58,7 @@ export default function App() {
 
     setFriends((friends) =>
     friends.map((friendObj) =>
-    // Loop through the friends(initialFriends) Array, if the friendObj id === selectedFriend id return the friendsArr, friendObj balance = value else if the current friend is not the one to be updated return that friendObj unchanged
+  // Loop through the friends(initialFriends) Array, if the friendObj id === selectedFriend id return the friendsArray with updated balance + splitBillValue(friend expense value) else return the friendObj as it is
       friendObj.id === selectedFriend.id ?
         { ...friendObj, balance: friendObj.balance + splitBillValue}
         : friendObj
