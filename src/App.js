@@ -205,7 +205,8 @@ function FormSplitBill({ selectedFriendProps, onSplitBillProps }) {
     e.preventDefault();
 
  // if the friend pays the bill => Negative balance(User) are owned by the user(You) i.e user(You) is owing a friend
-// If User(You) pays the bill => Positive balance(On user) which means friend is owing the user   
+// If User(You) pays the bill => Positive balance(On user) which means friend is owing the user  
+// if the user paid, add how much the friend owes. If the friend paid, subtract how much the user owes
     if (!bill || !paidByUser) return;
     onSplitBillProps(whoIsPaying === "user" ? paidByFriend :
     -paidByUser)
