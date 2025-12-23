@@ -104,6 +104,7 @@ function FriendsList({ friendsProps,
       {friendsProps.map((friendObj) => (
         <Friend friendProps={friendObj}
         key={friendObj.id} 
+  
         selectedFriendProps={selectedFriendProps}
         onSelectionProps={onSelectionProps }
         />
