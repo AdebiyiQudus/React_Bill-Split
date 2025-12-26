@@ -95,7 +95,8 @@ export default function App() {
     </div>
   );
 }
- 
+
+// FriendList Component  
 function FriendsList({ friendsProps, 
   onSelectionProps, selectedFriendProps}) {
 
